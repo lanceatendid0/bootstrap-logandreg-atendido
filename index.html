@@ -1,6 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">E-Commerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                    <li class="nav-item dropdown" hidden>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Settings
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Account Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class a="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a hidden class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button type="button" class="btn btn-primary position-relative">
+                        Cart
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                            <span class="visually-hidden">Item count</span>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d01ef37b-c14a-4edd-8787-534f5732294c/dunk-low-retro-shoe-66RGqF.png" class="card-img-top" alt="Nike Dunk Low Retro">
+                <div class="card-body">
+                    <h5 class="card-title">Nike Dunk Low Retro</h5>
+                    <p class="card-text">Nike Dunk Low Retro returns with crisp overlays and original team colors. This basketball icon channels '80s vibes with premium leather in the upper that looks good and breaks in even better. Modern footwear technology helps bring the comfort into the 21st century.</p>
+                    <ul>
+                        <li>Color Shown: White/Grey Fog</li>
+                        <li>Style: DD1391-103</li>
+                    </ul>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <p class="card-text">
+                        Price:
+                        <span style="background-color: black"> <font color="White"> ₱5,495 </font> </span>
+                    </p>
+                    <button type="button" class="btn btn-outline-success mt-2">Add to Cart</button>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">💜</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/009930cf-e4e1-4e59-992d-fc5b42a14d95/dunk-low-shoes-T4Ckpv.png" class="card-img-top" alt="Nike Dunk Low">
+                <div class="card-body">
+                    <h5 class="card-title">Nike Dunk Low</h5>
+                    <p class="card-text">Created for the hardwood but taken to the streets, the basketball icon returns in aged neutrals that deliver heritage hoops flair. Channelling '80s vibes, its padded, low-cut collar lets you take your game anywhere—in comfort.</p>
+                    <ul>
+                        <li>Color Shown: Sail/Coconut Milk/White/Deep Jungle</li>
+                        <li>Style: FQ8080-133</li>
+                    </ul>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <p class="card-text">
+                        Price:
+                        <span style="background-color: black"> <font color="White"> ₱5,495 </font> </span>
+                    </p>
+                    <button type="button" class="btn btn-outline-success mt-2">Add to Cart</button>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">💜</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/30707017-6950-4d9e-bcfb-e5fe01336a9d/air-more-uptempo-96-shoes-cWgPmS.png" class="card-img-top" alt="Nike Air More Uptempo '96">
+                <div class="card-body">
+                    <h5 class="card-title">Nike Air More Uptempo '96</h5>
+                    <p class="card-text">The Nike Air More Uptempo '96 refreshes an original that has reigned supreme for more than 20 years. With a design inspired by high-flying basketball style and '90s graffiti art, it can't help but turn heads off the court.</p>
+                    <ul>
+                        <li>Color Shown: Baroque Brown/Pale Ivory/Mystic Red/Sesame</li>
+                        <li>Style: FB8883-200</li>
+                    </ul>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <p class="card-text">
+                        Price:
+                        <span style="background-color: black"> <font color="White"> ₱9,895 </font> </span>
+                    </p>
+                    <button type="button" class="btn btn-outline-success mt-2">Add to Cart</button>
+                    <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">💜</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
@@ -26,8 +165,7 @@
           <button type="button" class="btn btn-outline-primary mt-2">Login</button>
           <button type="button" class="btn btn-outline-success mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</button>
           <a href="#" class="text-decoration-underline">Forgot Password</a>
-  
-  <!-- Modal -->
+
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -59,4 +197,4 @@
     </div>
     
 </body>
-</html>
+</html> -->
